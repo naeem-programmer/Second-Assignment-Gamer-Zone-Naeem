@@ -1,5 +1,124 @@
-*{
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
 
-    margin: 0;
-    padding: 0;
+/* Navbar Style Start */
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    height: 130px;
+
+}
+
+.game-logo-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.game-logo-container img {
+
+    height: 40px;
+    width: 80px;
+}
+
+.game-title {
+
+    color: #0B0223;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.game-title-g{
+
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu ul {
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    color: #3C354F;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.nav-button {
+
+    color: #3C354F;
+    font-size: 22px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 270px;
+    height: 56px;
+    padding: 17px;
+    border: none;
+
+}
+
+.fa-youtube{
+
+    color:#FD3E3E;
+    margin-left: 18px;
+}
+
+.fa-tiktok {
+
+    color: #111111;
+    filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+    margin-left: 18px;
+}
+
+/* Navbar Style Finish */
+
+
+
+/* First Banner Style Start */
+
+
+
+/* First Banner Style End */
+
+
+
+
+/* This Is Responsive Style For Mobile ( For Bonus Mark ) */
+
+@media screen and (max-width:576px) {
+
+     /* Responsive Navbar Start */
+
+    .nav-container{
+
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        box-shadow: none;
+    }
+    .nav-menu ul{
+
+        flex-direction: column;
+    }
+
+    /* Responsive Navbar End */
+
+
+    /* Responsive First Banner Section Start */
+
+
+    /* Responsive First Banner Section End */
 }
