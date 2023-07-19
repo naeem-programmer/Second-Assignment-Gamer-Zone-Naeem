@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
@@ -9,11 +11,11 @@
 .nav-container {
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    height: 130px;
+    height: 140px;
 
 }
 
@@ -38,7 +40,7 @@
     font-weight: 700;
 }
 
-.game-title-g{
+.game-title-g {
 
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     background-clip: text;
@@ -51,36 +53,38 @@
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     color: #3C354F;
     font-size: 22px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .nav-button {
 
     color: #3C354F;
     font-size: 22px;
-    border-radius: 8px;
+    border-radius: 10px;
     background: rgba(11, 2, 35, 0.10);
-    width: 270px;
+    width: 295px;
     height: 56px;
-    padding: 17px;
     border: none;
-
+    font-weight: 500;
+    cursor: pointer;
 }
 
-.fa-youtube{
+.fa-youtube {
 
-    color:#FD3E3E;
+    color: #FD3E3E;
     margin-left: 18px;
+    margin-right: 18px;
 }
 
 .fa-tiktok {
 
     color: #111111;
     filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
-    margin-left: 18px;
+
 }
 
 /* Navbar Style Finish */
@@ -90,26 +94,468 @@
 /* First Banner Style Start */
 
 
+.first-section-container {
+
+    display: flex;
+
+}
+
+.first-section-left-side {
+
+    background-image: url("./images/Group\ 14.png");
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first-section-left-side .first-section-first-heading {
+
+    color: #0B0223;
+    font-size: 48px;
+    text-transform: uppercase;
+
+}
+
+.first-section-left-side .first-section-second-heading {
+
+
+    font-size: 95px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 75px;
+    margin-top: 24px;
+    margin-bottom: 35px;
+
+}
+
+.first-section-left-side .fisrt-section-paragraph {
+
+    color: #534C64;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.first-section-left-side .sign-in-btn {
+
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    gap: 10px;
+    border: none;
+    margin-right: 24px;
+    cursor: pointer;
+
+}
+
+.first-section-left-side .go-rogue-btn {
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+    cursor: pointer;
+}
+
+.first-banner-image-right-side {
+
+    width: 50%;
+}
 
 /* First Banner Style End */
 
 
+/* Second Section Style Start */
+
+.second-section-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
+}
+
+.second-section-image-left-side img {
+
+    width: 868px;
+    height: 489px;
+    padding-left: 240px;
+
+}
+
+.second-section-right-side {
+
+    padding-right: 240px;
+    padding-left: 52px;
+    gap: 24px;
+
+}
+
+.text-second-section .second-section-heading {
+
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+
+}
+
+.text-second-section .second-section-paragraph {
+
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.know-more-btn {
+
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    margin-left: 400px;
+    border-radius: 48px;
+    border: none;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+}
+
+.second-section-paragraph-purpose {
+
+    color: #534C64;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.second-section-span {
+
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+/* Second Section Style End */
+
+/* Third Section Style Start */
+
+.online-info {
+
+    text-align: center;
+    margin-top: 70px;
+}
+
+.online-games-heading {
+
+    color: #0B0223;
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.online-games-paragraph {
+
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.funny-online-games-heading {
+
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    margin-bottom: 15px;
+
+
+}
+
+
+.box-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.box img:hover {
+
+    background: rgb(131, 58, 180);
+    background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 92%, rgba(252, 176, 69, 1) 100%);
+}
+
+/* Third Section Style End */
+
+/* Forth Section Style Start */
+
+.play-instantly-container {
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.play-instantly-text {
+
+    width: 50%;
+    margin-top: 100px;
+
+}
+
+.play-instantly-heading {
+
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+.play-instantly-span {
+
+    text-align: right;
+    font-size: 48px;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-instantly-paragraph {
+
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.play-instantly-image {
+
+    margin-right: 240px;
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.play-instantly-image img {
+
+    width: 100%;
+}
+
+.inside-image {
+
+    width: 318px;
+    height: 365px;
+    position: absolute;
+    bottom: -70px;
+    left: -145px;
+}
+
+/* Forth Section Style End */
+
+/* Fifth Section Style Start */
+
+.first-row {
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.second-row {
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.box1 {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.box1:hover{
+
+    background-color: tomato;
+}
+
+.box1-border:hover{
+
+    background-color: rgb(57, 236, 60);
+}
+
+.box1-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #FF42A5;
+    padding: 10px;
+    border-radius: 30px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Fifth Section Style End */
+
+/* Footer Style Start */
+
+.footer-container {
+
+
+    background: #0B0223;
+    width: auto;
+    height: 636px;
+
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 120px;
+}
+
+
+.game-title-footer {
+
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.footer-menus ul {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+
+
+}
+
+.footer-menus li {
+
+    list-style: none;
+}
+
+.footer-menus li a {
+
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+
+
+
+}
+
+.footer-social-media {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    gap: 40px;
+}
+
+.footer-tearms {
+
+
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    gap: 35px;
+}
+
+.copyright {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 45px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+}
+
+
+/* Footer Style End */
 
 
 /* This Is Responsive Style For Mobile ( For Bonus Mark ) */
 
 @media screen and (max-width:576px) {
 
-     /* Responsive Navbar Start */
+    /* Responsive Navbar Start */
 
-    .nav-container{
+    .nav-container {
 
         flex-direction: column;
         justify-content: center;
         height: auto;
         box-shadow: none;
+        padding: 25px 0;
     }
-    .nav-menu ul{
+
+    .nav-menu ul {
 
         flex-direction: column;
     }
@@ -119,6 +565,55 @@
 
     /* Responsive First Banner Section Start */
 
+    .first-section-container {
+
+
+        flex-direction: column;
+    }
+
+    .first-section-left-side {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .first-banner-image-right-side img {
+
+        width: 400px;
+        margin: 0 auto;
+    }
 
     /* Responsive First Banner Section End */
+
+
+    /* Responsive Second Section Start  */
+
+    .second-section-container {
+
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .second-section-image-left-side img {
+
+        width: 100%;
+        height: 489px;
+        padding: 0px
+    }
+
+    .second-section-right-side .second-section-heading .second-section-paragraph .know-more-btn {
+
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+
+
+    /* Responsive Second Section End */
 }
