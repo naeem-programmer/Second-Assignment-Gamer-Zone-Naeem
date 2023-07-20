@@ -354,7 +354,8 @@
 .box img:hover {
 
     filter: grayscale(100%);
-    border-radius: 8px;
+    border-radius: 50px;
+    border-radius: 3px solid red;
 }
 
 /* Third Section Style End */
@@ -432,12 +433,19 @@
 
 /* Fifth Section Style Start */
 
+.last-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 240px;
+}
+
 .first-row {
 
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .second-row {
@@ -463,21 +471,20 @@
 .box1:hover {
 
     background-color: tomato;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.box1-border:hover {
-
-    background-color: rgb(57, 236, 60);
-}
 
 .box1-border {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 3px solid #FF42A5;
-    padding: 10px;
-    border-radius: 30px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border-radius: 50px;
+    padding: 12px 25px;
+    background:#FF42A5;
+    gap: 12px;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -485,17 +492,24 @@
     font-size: 20px;
 }
 
+.box1-border:hover{
+
+    background-color: rgb(57, 236, 60);
+    cursor: pointer;
+
+}
+
 /* Fifth Section Style End */
+
+
 
 /* Footer Style Start */
 
 .footer-container {
 
-
     background: #0B0223;
     width: auto;
     height: 636px;
-
 }
 
 .logo-title {
@@ -506,7 +520,6 @@
     margin-bottom: 50px;
     padding-top: 120px;
 }
-
 
 .game-title-footer {
 
@@ -525,8 +538,6 @@
     align-items: center;
     text-align: center;
     gap: 60px;
-
-
 }
 
 .footer-menus li {
@@ -541,9 +552,6 @@
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-
-
-
 }
 
 .footer-social-media {
@@ -580,8 +588,10 @@
     font-size: 16px;
 }
 
-
 /* Footer Style End */
+
+
+
 
 
 /* This Is Responsive Style For Mobile ( For Bonus Mark ) */
@@ -718,13 +728,11 @@
 
         flex-direction: column;
 
-        
       }
 
       .play-instantly-text{
 
         margin-bottom: 25px;
-
         
       }
 
@@ -737,7 +745,7 @@
       .play-instantly-image img{
 
         width: 280px;
- 
+
       }
 
       .inside-image img{
@@ -748,22 +756,74 @@
         bottom: 400px;
       }
 
-
-
       /* Responsive Forth Section End */
 
-    .footer-container {
+
+      /* Responsive Fifth Section Start */
+
+
+      .last-section-container{
+
+        display: flex;
         flex-direction: column;
-
-    }
-
-    .footer-social-media {
-        justify-content: flex-start;
-    }
-
-    .footer-tearms {
         justify-content: center;
+        margin-top: -210px;
+      }
+
+      .first-row{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .second-row{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      /* Responsive Fifth Section Start */
+
+      /* Responsive Footer Section Start */
+
+
+    .game-title-footer{
+
+        font-size: 35px;
     }
 
-    /* Responsive Second Section End */
+    .footer-menus ul{
+
+        gap: 10px;
+        
+    }
+
+    .footer-menus li a{
+
+        font-size: 12px;
+    }
+
+    .footer-tearms{
+
+        justify-content: center;
+        font-size: 10px;
+        gap: 20px;
+    }
+
+    .copyright{
+
+        font-size: 12px;
+    }
+
+    /* Responsive Footer Section End */
+
+     /* 1 - Career Section Is Optional That's Why I didn't Do. ( As Per Instructor Instruction - Gias Uddin Brother )
+        2 - We Are Gamer Section Is Optional That's Why I didn't Do. ( As Per Instructor Instruction - Gias Uddin Brother )
+     
+     */
+
+    /* May Allah Bless My Examiner */
 }
